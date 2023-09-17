@@ -253,9 +253,13 @@ margin-top: 10px;
 }
 .files
 {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px;
+    justify-content: center;
+    
 }
+
 .imgBx{
     border-radius: 2px;
     width: 450px;
@@ -341,7 +345,12 @@ margin-top: 10px;
     font-size: 1.1em;
     color: #aaa;
 }
-
+#gitD{
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
 /* Responsive Code */
 @media (max-width: 900px)
@@ -474,4 +483,12 @@ header.active ul li a
     {
         height: 80px;
     }
+}
+
+
+#resume-button-1{
+    display: none;
+}
+#resume-button-2{
+    display: none;
 }
