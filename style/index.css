@@ -126,7 +126,7 @@ transition: transform 0.3s ease 0s;
     text-align: center;
     padding: 15px;
     background:#2e2f34 ;
-    width: 300px;
+    width: 90%
 }
 .works>div>h3{
     color: #30fe6c;
@@ -141,7 +141,7 @@ transition: transform 0.3s ease 0s;
 }
 .ticks{
     margin-top: 15px;
-    width: 680px;
+    width: 70%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
@@ -242,6 +242,10 @@ transition: transform 0.3s ease 0s;
     height: 50px;
     border-radius: 2px;
     transition: 0.5s;
+}
+#resume-button-1>a{
+    text-decoration: none;
+    color: white;
 }
 #resume-button-1:hover{
     background-color: #30fe6c;
@@ -500,6 +504,24 @@ transition: transform 0.3s ease 0s;
     color: #fff;
     transition: 0.5s;
 }
+.gitt{
+    background-color: #34353a;
+}
+.react-activity-calendar{
+
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+}
+.react-activity-calendar>img{
+    width: 100%;
+    height: 200px;
+}
+.react-activity-calendar>img:nth-child(2){
+    margin-top: 230px;
+}
+
 #contact .content a:hover
 {
     background: #30fe6c;
@@ -579,11 +601,45 @@ reveal.active {
   }
 
 
-/* Responsive Code */
-@media (max-width: 900px)
-{
-    header{
+  @media (max-width: 1500px){
+         .logos{
+            grid-template-columns: repeat(4,1fr);
+         }
+         .works{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+         }
+  }
+
+  @media (max-width: 1200px){
+       .bigProj{
+        display: flex;
+        flex-direction: column;
+       }
+       .files{
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+       }
+       .cards{
         
+        margin-bottom: 450px;
+       }
+       .detailsProj{
+        width: 100%;
+       }
+       .react-activity-calendar>img:nth-child(2){
+        margin-top: 50px;
+    }
+    .react-activity-calendar>img{
+        margin-top: 50px;
+    }
+       
+  }
+
+/* Responsive Code */
+@media only screen and (max-width: 900px) {
+    header{
         padding: 20px 50px;
     }
     #home
@@ -602,6 +658,15 @@ reveal.active {
         height: 50vh;
         right: 0;
     }
+
+    .logos{
+        grid-template-columns: repeat(3,1fr);
+     }
+     .works{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+     }
+
     .secText h2{
         font-size: 2em;
         text-align: center;
@@ -742,6 +807,73 @@ header.active ul li a
     #gitD>img{
         width: 100%;
     }
+    .logos{
+        grid-template-columns: repeat(2,1fr);
+     }
+     .files{
+      width: 100%;
+     }
+     .stack>p{
+        display: block;
+        width: 150px;
+        
+        margin-top: 10px;
+     }
+     .cards{
+        width: 100%;
+        margin-bottom: 650px;
+     }
+     .cards>h1{
+        font-size: 20px;
+        width: 100%;
+     }
+     .imgProj{
+        width: 100%;
+     }
 }
 
+@media (max-width: 500px){
+    
+    .ticks{
+        display: flex;
+        flex-direction: column;
+    }
+    .cards{
+       width: 100%;
+    }
+    .files{
+        width: 100%;
+    }
+    .imgProj{
+        width: 100%;
+    }
+    .imgProj>img{
+        height: 300px;
+    }
+    .detailsProj{
+        width: 100%;
+    }
+    .skillLogo{
+        width: 70%;
+    }
+    .skillLogo>img{
+        width: 70%;
+    }
+    .logos{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .react-activity-calendar>img:nth-child(2){
+        margin: 15px;
+    }
+    .react-activity-calendar>img{
+        width: 80%;
+        margin: 15px;
+    }
+    .react-activity-calendar{
+        flex-direction: column;
+    }
+    .files>div:nth-child(4){
+        height: 400px;
+    }
+}
 

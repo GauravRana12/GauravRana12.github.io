@@ -29,3 +29,12 @@ function reveal() {
   }
   
   window.addEventListener("scroll", reveal);
+
+
+  
+const resume=document.querySelectorAll('.resume');
+resume.forEach((ele)=>{
+  ele.addEventListener('click',function(){
+    window.open('https://drive.google.com/file/d/1lxwKdNzUV80HKqGErKn87FnuslC5QoB8/view?usp=sharing','_blank')
+  })
+})
