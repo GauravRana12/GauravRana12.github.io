@@ -35,6 +35,6 @@ function reveal() {
 const resume=document.querySelectorAll('.resume');
 resume.forEach((ele)=>{
   ele.addEventListener('click',function(){
-    window.open('https://drive.google.com/file/d/1lxwKdNzUV80HKqGErKn87FnuslC5QoB8/view?usp=sharing','_blank')
+    window.open('https://drive.google.com/file/d/1PzzBSXM3LeTXwmMnBYky0rBPxKiUsX1S/view?usp=sharing','_blank')
   })
 })
