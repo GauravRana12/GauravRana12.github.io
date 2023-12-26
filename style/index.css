@@ -188,6 +188,7 @@ transition: transform 0.3s ease 0s;
     width: 30%;
     height: 330px;
     transition: transform 0.3s ease 0s;
+    object-fit:cover;
 }
 #image:hover{
     transform: translateY(-7px);
@@ -344,6 +345,7 @@ transition: transform 0.3s ease 0s;
     border: 5px solid white;
     border-radius: 15px;
     height: 500px;
+    object-fit:cover;
 }
 .bigProj{
     display: flex;
@@ -555,17 +557,17 @@ reveal.active {
     opacity: 1;
   }
   .active.fade-bottom {
-    animation: fade-bottom 1s ease-in;
+    animation: fade-bottom 1.5s ease-in;
   }
   .active.fade-left {
-    animation: fade-left 1s ease-in;
+    animation: fade-left 1.5s ease-in;
   }
   .active.fade-right {
-    animation: fade-right 1s ease-in;
+    animation: fade-right 1.5s ease-in;
   }
   @keyframes fade-bottom {
     0% {
-      transform: translateY(50px);
+      transform: translateY(20px);
       opacity: 0;
     }
     100% {
@@ -576,7 +578,7 @@ reveal.active {
   @keyframes fade-left {
     0% {
       transform: translateX(-100px);
-      opacity: 0;
+      opacity: 1;
     }
     100% {
       transform: translateX(0);
@@ -587,7 +589,7 @@ reveal.active {
   @keyframes fade-right {
     0% {
       transform: translateX(100px);
-      opacity: 0;
+      opacity: 1;
     }
     100% {
       transform: translateX(0);
@@ -902,4 +904,10 @@ header.active ul li a
         height: 400px;
     }
 }
+
+
+
+
+
+
 

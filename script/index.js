@@ -38,3 +38,4 @@ resume.forEach((ele)=>{
     window.open('https://drive.google.com/file/d/1PzzBSXM3LeTXwmMnBYky0rBPxKiUsX1S/view?usp=sharing','_blank')
   })
 })
+
