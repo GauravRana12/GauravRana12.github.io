@@ -345,7 +345,10 @@ transition: transform 0.3s ease 0s;
     border: 5px solid white;
     border-radius: 15px;
     height: 500px;
-    object-fit:cover;
+    
+}
+.imgProj>img:nth-child(3){
+    object-fit:fill;
 }
 .bigProj{
     display: flex;
