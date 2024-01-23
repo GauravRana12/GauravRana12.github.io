@@ -7,6 +7,15 @@
    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+.chart{
+    display: flex;
+    background-color: #34353a;
+    padding-top: 20px;
+    justify-content: center;
+}
+.chart>img{
+    width: 70%;
+}
 header
 {
     position: fixed;
@@ -560,13 +569,13 @@ reveal.active {
     opacity: 1;
   }
   .active.fade-bottom {
-    animation: fade-bottom 1.5s ease-in;
+    animation: fade-bottom 0.7s ease-in;
   }
   .active.fade-left {
-    animation: fade-left 1.5s ease-in;
+    animation: fade-left 0.7s ease-in;
   }
   .active.fade-right {
-    animation: fade-right 1.5s ease-in;
+    animation: fade-right 0.7s ease-in;
   }
   @keyframes fade-bottom {
     0% {
@@ -906,6 +915,19 @@ header.active ul li a
     .files>div:nth-child(4){
         height: 400px;
     }
+    .chart>img{
+        width: 100%;
+    }
+    
+    .active.fade-bottom {
+        animation: fade-bottom 0.5s ease-in;
+      }
+      .active.fade-left {
+        animation: fade-left 0.5s ease-in;
+      }
+      .active.fade-right {
+        animation: fade-right 0.5s ease-in;
+      }
 }
 
 
