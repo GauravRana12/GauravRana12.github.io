@@ -330,131 +330,10 @@ transition: transform 0.3s ease 0s;
     cursor:pointer;
     border: 2px solid #30fe6c;
 }
-
-
 #projects
 {
     
     background: #2e2f34;
-}
-.files
-{
-    display: flex;
-    flex-direction: column;
-    gap: 120px;
-    
-}
-
-.imgProj{
-    height: 650px;
-    width: 50%;
-}
-.imgProj>img{
-    width: 100%;
-    border: 5px solid white;
-    border-radius: 15px;
-    height: 500px;
-    
-}
-.imgProj>img:nth-child(3){
-    object-fit:fill;
-}
-.bigProj{
-    display: flex;
-    height: 650px;
-    gap: 100px;
-    margin-top: 30px;
-}
-.role{
-    font-size: 22px;
-    margin-bottom: 8px;
-    color: #30fe6c;
-}
-.role>span{
-    font-size: 20px;
-    color: white;
-}
-.project-description{
-    font-size: 22px;
-    color: gray;
-}
-.feat{
-    margin-top: 15px;
-    color: #30fe6c;
-    font-size: 20px;
-}
-.stacks{
-    display: inline;
-    font-size: 20px;
-    margin-top: 10px;
-    color: #30fe6c;
-}
-.area{
-    margin-top: 10px;
-    font-size: 22px;
-    color: #30fe6c;
-}
-.twoLinks{
-    display: flex;
-    gap: 20px;
-}
-.twoLinks>a>p{
-    text-decoration: none;
-    border: 2px solid #30fe6c;
-    border-radius: 20px;
-    padding: 10px;
-    color: white;
-    background-color: #37383a;
-    transition: 0.5s;
-}
-.twoLinks>a>p:hover{
-    cursor: pointer;
-    background-color: #30fe6c;
-    color: black;
-}
-
-.area>span{
-    font-size: 20px;
-    color: white;
-}
-.link{
-    font-size: 22px;
-    margin-top: 10px;
-    color: #27cf57;
-}
-.stack{
-    display: inline;
-    margin-left: 15px;
-    gap: 10px;
-}
-.stack>p{
-    display: inline;
-    margin-left: 5px;
-    border-radius: 15px;
-    border: 2px solid #30fe6c;
-    
-    padding: 8px;
-    color: white;
-    background-color: #37383a;
-}
-.detailsProj>ul{
-    margin-left: 10px;
-    color: white;
-    font-size: 17px;
-}
-
-.detailsProj>h2{
-    font-size: 30px;
-    color: #30fe6c;
-}
-
-.cards{
-    height: 650px;
-    margin-top: 40px;
-}
-.project-title{
-    font-size: 40px ;
-    color: wheat;
 }
 .imgBx{
     border-radius: 2px;
@@ -500,6 +379,78 @@ transition: transform 0.3s ease 0s;
 .buttons>a>button:hover{
     box-shadow: #30fe6c 0px 3px 15px;
 }
+
+/* Project */
+#project-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+.project_common{
+    display: flex;
+    justify-content: space-between;
+}
+.project_image_container{
+    width: 40%;
+    height: 264px;
+}
+.project_content_container{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.project_image_container>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+}
+.project-title{
+    color: white;
+    font-size: 2rem;
+}
+.project_content_container>p{
+    color: #aaa;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+.tech-stack-used>span{
+    color: rgb(52 211 153);
+    background-color: rgba(6, 78, 59, .8);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 7px;
+    font-size: 0.8rem;
+}
+.tech-stack-used {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.links_project {
+    display: flex;
+    gap: 10px;
+}
+
+.links_project>a{
+    text-decoration: none;
+    padding: 0.7rem 1rem 0.7rem 1rem;
+    border-radius: 20px;
+    color: white;
+    text-decoration: underline;
+    background-color: #222;
+    font-size: 13px;
+    cursor: pointer;
+}
+.links_project>a:hover{
+    background-color: #444;
+}
+.project_line{
+    margin-top: 45px;
+    margin-bottom: 45px;
+    color: #444;
+}
+/* Project end */
+
 #contact .content
 {
    display: grid;
@@ -565,51 +516,6 @@ transition: transform 0.3s ease 0s;
     width: 30%;
 }
 
-reveal.active {
-    opacity: 1;
-  }
-  .active.fade-bottom {
-    animation: fade-bottom 0.7s ease-in;
-  }
-  .active.fade-left {
-    animation: fade-left 0.7s ease-in;
-  }
-  .active.fade-right {
-    animation: fade-right 0.7s ease-in;
-  }
-  @keyframes fade-bottom {
-    0% {
-      transform: translateY(20px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  @keyframes fade-left {
-    0% {
-      transform: translateX(-100px);
-      opacity: 1;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes fade-right {
-    0% {
-      transform: translateX(100px);
-      opacity: 1;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
-
   @media (max-width: 1500px){
          .logos{
             grid-template-columns: repeat(4,1fr);
@@ -621,22 +527,7 @@ reveal.active {
   }
 
   @media (max-width: 1200px){
-       .bigProj{
-        display: flex;
-        flex-direction: column;
-       }
-       .files{
-        justify-content: center;
-        width: 100%;
-        align-items: center;
-       }
-       .cards{
-        
-        margin-bottom: 450px;
-       }
-       .detailsProj{
-        width: 100%;
-       }
+       
       .react-activity-calendar{
         grid-template-columns: repeat(2,1fr);
       }
@@ -824,26 +715,6 @@ header.active ul li a
     .logos{
         grid-template-columns: repeat(2,1fr);
      }
-     .files{
-      width: 100%;
-     }
-     .stack>p{
-        display: block;
-        width: 150px;
-        
-        margin-top: 10px;
-     }
-     .cards{
-        width: 100%;
-        margin-bottom: 650px;
-     }
-     .cards>h1{
-        font-size: 20px;
-        width: 100%;
-     }
-     .imgProj{
-        width: 100%;
-     }
 }
 
 @media (max-width: 500px){
@@ -852,42 +723,6 @@ header.active ul li a
         display: flex;
         flex-direction: column;
     }
-    .cards{
-       width: 100%;
-    }
-    .files{
-        width: 100%;
-    }
-    .imgProj{
-        width: 100%;
-    }
-    .imgProj>img{
-        height: 300px;
-    }
-    .detailsProj{
-        width: 100%;
-    }
-    .detailsProj>h2{
-        font-size: 19px;
-    }
-    .project-description{
-        font-size: 17px;
-    }
-    .role{
-        font-size: 17px;
-    }
-    .area{
-        font-size: 17px;
-    }
-    .twoLinks>a{
-        text-decoration: none;
-    }
-    .twoLinks>a>p{
-        font-size: 14px;
-    }
-       .files>div:nth-child(4){
-        margin-bottom: 800px;
-       }
     .skillLogo{
         box-shadow: none;
         width: 70%;
@@ -912,22 +747,10 @@ header.active ul li a
     .react-activity-calendar{
         flex-direction: column;
     }
-    .files>div:nth-child(4){
-        height: 400px;
-    }
     .chart>img{
         width: 100%;
     }
     
-    .active.fade-bottom {
-        animation: fade-bottom 0.5s ease-in;
-      }
-      .active.fade-left {
-        animation: fade-left 0.5s ease-in;
-      }
-      .active.fade-right {
-        animation: fade-right 0.5s ease-in;
-      }
 }
 
 
