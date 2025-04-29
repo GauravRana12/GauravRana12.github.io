@@ -18,7 +18,7 @@ header.classList.toggle('active');
 const resume=document.querySelectorAll('.resume');
 resume.forEach((ele)=>{
   ele.addEventListener('click',function(){
-    window.open('https://drive.google.com/file/d/1xj5-WUalpaiIk54bloBHIAO62UHDgNIr/view?usp=sharing','_blank')
+    window.open('https://drive.google.com/file/d/1DKmcNR8vIP_bxcClPKDCX_W0Ax8skR7c/view?usp=sharing','_blank')
   })
 })
 

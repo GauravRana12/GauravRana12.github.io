@@ -307,19 +307,18 @@ transition: transform 0.3s ease 0s;
 .logos{
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    gap: 20px;
     margin-top: 25px;
 }
 .skillLogo>img{
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 8px;
-    width: 80px;
-    height: 80px;
+    width: 55px;
+    height: 55px;
 }
 .skillLogo{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    height: 200px;
-    width: 180px;
+    height: 135px;
+    width: 145px;
     color: #fff;
     margin: 15px;
     margin-top: 25px;
@@ -392,7 +391,7 @@ transition: transform 0.3s ease 0s;
 }
 .project_image_container{
     width: 40%;
-    height: 264px;
+    
 }
 .project_content_container{
     width: 55%;
@@ -445,9 +444,8 @@ transition: transform 0.3s ease 0s;
     background-color: #444;
 }
 .project_line{
-    margin-top: 45px;
-    margin-bottom: 45px;
-    color: #444;
+    margin-top: 95px;
+    margin-bottom: 95px;
 }
 /* Project end */
 
@@ -537,6 +535,22 @@ transition: transform 0.3s ease 0s;
     .logos{
         grid-template-columns: repeat(3,1fr);
      }
+  }
+  @media (max-width: 1110px){
+    .project_common{
+        flex-direction: column;
+    }
+    .project_image_container{
+        width: 55%;
+    }
+    .project_content_container{
+        width: 85%;
+        margin-top: 35px;
+    }
+    .project_line {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
   }
 
 /* Responsive Code */
@@ -659,6 +673,9 @@ header.active ul li a
 
 @media (max-width: 730px)
 {
+    .project_image_container {
+        width: 65%;
+    }
     #home .content h2
     {
         font-size: 3em;
@@ -718,7 +735,31 @@ header.active ul li a
 }
 
 @media (max-width: 500px){
-    
+    .project_image_container {
+        width: 95%;
+    }
+    .project_content_container {
+        width: 100%;
+    }
+    .project-title{
+        font-size: 1.5rem;
+    }
+    .project_content_container>p{
+        font-size: 0.8em;
+    }
+    .links_project>a{
+        font-size: 11px;
+    }
+    .project_content_container{
+        margin-top: 20px;
+    }
+    .project_line {
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+    .tech-stack-used>span{
+        font-size: 0.7rem;
+    }
     .ticks{
         display: flex;
         flex-direction: column;
